@@ -1,0 +1,292 @@
+CRITICAL - 2021-12-15 12:18:17 --> Undefined array key "auth_email"
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\apps\\b...', 63)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-15 12:18:24 --> Undefined array key "auth_email"
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\apps\\b...', 63)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-15 12:20:05 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-15 12:20:05 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-15 12:44:27 --> Undefined property: stdClass::$users_token
+#0 C:\xampp\apps\b4t\app\Views\backend\template\top_menu_view.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 30)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/templat...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\template\header_view.php(28): CodeIgniter\View\View->include('backend/templat...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/templat...', Array, true)
+#8 C:\xampp\apps\b4t\app\Views\backend\template\main_view.php(1): view('backend/templat...')
+#9 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#10 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\apps\b4t\system\View\View.php(230): CodeIgniter\View\View->render('backend/templat...', Array, true)
+#12 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#13 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(18): view('backend/dashboa...', Array)
+#14 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->index()
+#15 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#16 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#18 {main}
+ERROR - 2021-12-15 12:45:39 --> Unknown column 'users_token' in 'where clause'
+CRITICAL - 2021-12-15 12:45:39 --> Unknown column 'users_token' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(302): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(222): App\Models\backend\UsersModel->getProfile('efc95b5d2097216...')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->account('efc95b5d2097216...')
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 12:47:04 --> Unknown column 'users_token' in 'where clause'
+CRITICAL - 2021-12-15 12:47:04 --> Unknown column 'users_token' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(302): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(222): App\Models\backend\UsersModel->getProfile('efc95b5d2097216...')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->account('efc95b5d2097216...')
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-15 12:49:21 --> Class "App\Models\backend\Token" not found
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(222): App\Models\backend\UsersModel->getProfile('efc95b5d2097216...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->account('efc95b5d2097216...')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-15 13:02:09 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:02:09 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 13:08:45 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:08:45 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 13:09:27 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:09:27 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 13:11:00 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:11:00 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 13:15:01 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_2` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:15:01 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_member_id_2` FOREIGN KEY (`sessions_entity_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 13:16:16 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-15 13:16:16 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`sessions`, CONSTRAINT `FK_organizer_id_5` FOREIGN KEY (`sessions_entity_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 18:26:15 --> Unknown column 'users_token_hash' in 'field list'
+CRITICAL - 2021-12-15 18:26:15 --> Unknown column 'users_token_hash' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `users` ...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(93): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 18:26:25 --> Unknown column 'users_token_hash' in 'field list'
+CRITICAL - 2021-12-15 18:26:25 --> Unknown column 'users_token_hash' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `users` ...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(93): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-15 19:25:32 --> Class 'App\Models\frontend\Token' not found
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-15 19:26:07 --> Class 'App\Models\frontend\Token' not found
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-15 19:26:57 --> Column 'sessions_entity_id' cannot be null
+CRITICAL - 2021-12-15 19:26:57 --> Column 'sessions_entity_id' cannot be null
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(126): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 19:27:39 --> Column 'sessions_entity_id' cannot be null
+CRITICAL - 2021-12-15 19:27:39 --> Column 'sessions_entity_id' cannot be null
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(126): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-15 19:31:00 --> noOrganizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noOrganizersAut...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noOrganizersAut...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-15 19:31:05 --> Call to a member function isLoggedIn() on null
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\UsersNoAuthorization->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/auth/logi...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-15 19:31:26 --> Call to a member function isLoggedIn() on null
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\UsersNoAuthorization->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/auth/logi...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-15 19:31:43 --> Call to a member function isLoggedIn() on null
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\UsersNoAuthorization->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/auth/logi...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-15 19:32:26 --> Call to a member function isLoggedin() on null
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-15 22:18:07 --> Class 'App\Libraries\AuthorizationOrganizersManager' not found
+#0 C:\xampp\apps\b4t\system\Config\BaseService.php(189): Config\Services::authorizationOrganizers(false)
+#1 C:\xampp\apps\b4t\app\Config\Services.php(117): CodeIgniter\Config\BaseService::getSharedInstance('authorizationor...')
+#2 C:\xampp\apps\b4t\system\Common.php(932): Config\Services::authorizationOrganizers()
+#3 C:\xampp\apps\b4t\app\Filters\OrganizersNoAuthorization.php(13): service('authorizationOr...')
+#4 C:\xampp\apps\b4t\system\Filters\Filters.php(162): App\Filters\OrganizersNoAuthorization->__construct()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('organizers/logi...', 'before')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-15 22:23:32 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-15 22:23:32 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `or...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(225): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(259): App\Models\frontend\OrganizersModel->register(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->registerAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-15 22:23:39 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-15 22:23:39 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `or...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(225): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(259): App\Models\frontend\OrganizersModel->register(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->registerAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

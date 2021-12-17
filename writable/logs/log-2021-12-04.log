@@ -1,0 +1,396 @@
+CRITICAL - 2021-12-04 17:02:21 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+#0 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/users/p...', NULL, true)
+#2 C:\xampp\apps\b4t\app\Views\backend\users\edit_view.php(34): CodeIgniter\View\View->include('backend/users/p...')
+#3 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/users/e...', Array, true)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(108): view('backend/users/e...', Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->edit(5)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-04 17:03:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+#0 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/users/p...', NULL, true)
+#2 C:\xampp\apps\b4t\app\Views\backend\users\edit_view.php(34): CodeIgniter\View\View->include('backend/users/p...')
+#3 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/users/e...', Array, true)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(108): view('backend/users/e...', Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->edit(5)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-04 17:08:41 --> Argument 1 passed to App\Controllers\backend\UsersController::_getUserOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php on line 119
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(119): App\Controllers\backend\UsersController->_getUserOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:08:50 --> Argument 1 passed to App\Controllers\backend\UsersController::_getUserOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php on line 119
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(119): App\Controllers\backend\UsersController->_getUserOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:11:37 --> Argument 1 passed to App\Controllers\backend\UsersController::_getUserOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php on line 119
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(119): App\Controllers\backend\UsersController->_getUserOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:13:54 --> Argument 1 passed to App\Controllers\backend\CircuitsController::_getCircuitOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php on line 137
+#0 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(137): App\Controllers\backend\CircuitsController->_getCircuitOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:14:03 --> Argument 1 passed to App\Controllers\backend\CircuitsController::_getCircuitOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php on line 137
+#0 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(137): App\Controllers\backend\CircuitsController->_getCircuitOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:14:10 --> Undefined property: stdClass::$organizers_coins
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_edit_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 83, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/organiz...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\organizers\edit_view.php(41): CodeIgniter\View\View->include('backend/organiz...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(125): view('backend/organiz...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->edit(3)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-04 17:14:23 --> Argument 1 passed to App\Controllers\backend\EventsController::_getEventOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php on line 141
+#0 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(141): App\Controllers\backend\EventsController->_getEventOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:14:24 --> Argument 1 passed to App\Controllers\backend\EventsController::_getEventOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php on line 141
+#0 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(141): App\Controllers\backend\EventsController->_getEventOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:28:58 --> Argument 1 passed to App\Controllers\backend\EventsController::_getEventOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php on line 141
+#0 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(141): App\Controllers\backend\EventsController->_getEventOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:29:04 --> Argument 1 passed to App\Controllers\backend\EventsController::_getEventOr404() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php on line 141
+#0 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(141): App\Controllers\backend\EventsController->_getEventOr404(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 17:37:39 --> Undefined index: users_id
+#0 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 151, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(162): App\Models\backend\UsersModel->edit(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->editAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-04 17:49:29 --> Undefined variable: users
+#0 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 181, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(198): App\Models\backend\UsersModel->delete(5)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-04 18:33:20 --> Default value for parameters with an object type can only be NULL
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-04 18:43:24 --> Undefined variable: user
+#0 C:\xampp\apps\b4t\app\Views\backend\news\partials\_edit_view.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 18, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/news/pa...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\news\edit_view.php(41): CodeIgniter\View\View->include('backend/news/pa...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/news/ed...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(117): view('backend/news/ed...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->edit(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-04 19:15:51 --> Undefined property: App\Models\backend\NewsModel::$validationRules
+#0 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 158, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-04 19:17:21 --> Unknown column 'csrf_test_name' in 'field list'
+CRITICAL - 2021-12-04 19:17:21 --> Unknown column 'csrf_test_name' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `news` S...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `news` S...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `news` S...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `news` S...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\NewsModel.php(217): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(179): App\Models\backend\NewsModel->edit(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->editAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-04 19:19:28 --> Undefined index: new
+#0 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 181, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 19:28:50 --> Call to undefined method App\Models\backend\NewsModel::validationRules()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->addAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-04 19:29:06 --> Call to undefined method App\Models\backend\NewsModel::validationRules()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->addAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-04 20:17:48 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:17:58 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:20:59 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:36:16 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:36:56 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:38:38 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:39:26 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:44:52 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:46:21 --> Invalid argument supplied for foreach()
+#0 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\apps\\b...', 349, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(141): CodeIgniter\Database\BaseBuilder->select(NULL)
+#2 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(52): App\Models\backend\BackendModel->getID(6)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(66): App\Models\backend\ProfileModel->edit(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 20:48:16 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, string given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements('')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:48:27 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, string given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements('')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:48:33 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, string given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements('')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 20:49:49 --> Argument 1 passed to App\Libraries\AttachementsManager::showAttachements() must be of the type int, string given, called in C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php on line 22
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AttachementsController.php(22): App\Libraries\AttachementsManager->showAttachements('')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\Backend\AttachementsController->showAttachements()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\AttachementsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:00:15 --> Call to undefined method App\Models\backend\ProfileModel::getProfile()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->edit('df2fe1aa5686802...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-04 21:04:50 --> syntax error, unexpected ':', expecting ';'
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(13): spl_autoload_call('App\\Models\\back...')
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\ProfileController->__construct()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-04 21:12:29 --> Call to undefined method App\Controllers\backend\ProfileController::getID()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-04 21:13:59 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:15:17 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:23:09 --> Undefined index: users_id
+#0 C:\xampp\apps\b4t\app\Models\backend\ProfileModel.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 60, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(79): App\Models\backend\ProfileModel->edit(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-04 21:27:25 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:27:56 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:27:58 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:27:58 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:29:40 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 36
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(36): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editOutput()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 21:33:57 --> Argument 1 passed to App\Models\backend\BackendModel::getID() must be of the type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php on line 61
+#0 C:\xampp\apps\b4t\app\Controllers\backend\ProfileController.php(61): App\Models\backend\BackendModel->getID(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ProfileController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ProfileController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-04 22:21:13 --> Invalid file: backend/users/profile_view.php
+#0 C:\xampp\apps\b4t\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/users/p...')
+#1 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/users/p...', Array, true)
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(214): view('backend/users/p...', Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->account('29055d559ef44b3...')
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-04 23:31:52 --> Undefined property: stdClass::$organizers_coins
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_edit_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 83, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/organiz...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\organizers\edit_view.php(41): CodeIgniter\View\View->include('backend/organiz...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(125): view('backend/organiz...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->edit(3)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

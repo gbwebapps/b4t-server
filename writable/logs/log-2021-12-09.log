@@ -1,0 +1,864 @@
+CRITICAL - 2021-12-09 11:31:50 --> Undefined variable: circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(36): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 11:32:04 --> Undefined variable: circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(36): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-09 11:48:37 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`))
+CRITICAL - 2021-12-09 11:48:37 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`))
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `tr...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(276): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 11:55:41 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-09 11:55:41 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `tr...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(276): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 11:56:05 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-09 11:56:05 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`transactions`, CONSTRAINT `FK_event_id_4` FOREIGN KEY (`transactions_event_id`) REFERENCES `events` (`events_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `tr...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(276): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 12:37:21 --> Unknown column 'transactions_event_id' in 'field list'
+CRITICAL - 2021-12-09 12:37:21 --> Unknown column 'transactions_event_id' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 13:03:08 --> Incorrect parameter count in the call to native function 'ifnull'
+CRITICAL - 2021-12-09 13:03:08 --> Incorrect parameter count in the call to native function 'ifnull'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(151): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(106): App\Models\backend\BackendModel->getID(2)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(98): App\Controllers\backend\TransactionsController->_getTransactionOr404(2)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-12-09 13:03:19 --> Incorrect parameter count in the call to native function 'ifnull'
+CRITICAL - 2021-12-09 13:03:19 --> Incorrect parameter count in the call to native function 'ifnull'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(151): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(106): App\Models\backend\BackendModel->getID(1)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(98): App\Controllers\backend\TransactionsController->_getTransactionOr404(1)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(1)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-09 13:03:41 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-09 13:03:53 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-09 13:04:11 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-09 13:04:15 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-09 14:12:32 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-09 14:13:32 --> Undefined property: stdClass::$events_name
+#0 C:\xampp\apps\b4t\app\Views\backend\transactions\partials\_show_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/transac...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\transactions\show_view.php(34): CodeIgniter\View\View->include('backend/transac...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/transac...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(101): view('backend/transac...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-09 14:15:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 USING (`left`)
+WHERE `transactions_id` = 2
+ LIMIT 1' at line 5
+CRITICAL - 2021-12-09 14:15:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 USING (`left`)
+WHERE `transactions_id` = 2
+ LIMIT 1' at line 5
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(151): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(106): App\Models\backend\BackendModel->getID(2)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(98): App\Controllers\backend\TransactionsController->_getTransactionOr404(2)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-12-09 14:16:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 USING (`left`)
+WHERE `transactions_id` = 2
+ LIMIT 1' at line 5
+CRITICAL - 2021-12-09 14:16:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 USING (`left`)
+WHERE `transactions_id` = 2
+ LIMIT 1' at line 5
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(151): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(106): App\Models\backend\BackendModel->getID(2)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(98): App\Controllers\backend\TransactionsController->_getTransactionOr404(2)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->show(2)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-12-09 14:25:17 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:25:17 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:25:28 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:25:28 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:26:07 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:26:07 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:27:22 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:27:22 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:28:13 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:28:13 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:29:54 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:29:54 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:31:32 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:31:32 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:33:11 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:33:11 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:33:11 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:33:11 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:33:12 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:33:12 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:33:12 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:33:12 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:34:37 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:34:37 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 14:34:39 --> Unknown column 'transactions_event_id' in 'where clause'
+CRITICAL - 2021-12-09 14:34:39 --> Unknown column 'transactions_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-09 15:04:11 --> Undefined variable: role
+#0 C:\xampp\apps\b4t\app\Views\backend\users\partials\_show_all_view.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 177, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/users/p...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(42): view('backend/users/p...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 15:54:49 --> Undefined property: stdClass::$circuits_deleted_at
+#0 C:\xampp\apps\b4t\app\Views\backend\circuits\partials\_show_all_view.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 77, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/circuit...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(45): view('backend/circuit...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 16:07:13 --> Undefined variable: data
+#0 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(324): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 324, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(210): App\Models\backend\OrganizersModel->delete(1)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 16:50:27 --> Undefined variable: users
+#0 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(222): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 222, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(212): App\Models\backend\UsersModel->delete(2)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-09 17:13:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '_deleted_at
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+CRITICAL - 2021-12-09 17:13:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '_deleted_at
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 17:14:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`_deleted_at` IS NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+CRITICAL - 2021-12-09 17:14:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`_deleted_at` IS NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 17:15:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`_deleted_at` IS NOT NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+CRITICAL - 2021-12-09 17:15:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`_deleted_at` IS NOT NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 17:18:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+CRITICAL - 2021-12-09 17:18:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `circuits_id` DESC
+ LIMIT 5' at line 3
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(131): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-09 17:45:52 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 126, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 17:45:52 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 126, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 17:45:52 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 126, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 17:45:53 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 126, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 17:49:49 --> Undefined variable: posts
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 209, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(138): App\Models\backend\BackendModel->_getNumRows(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 17:50:16 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 209, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(138): App\Models\backend\BackendModel->_getNumRows(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 17:50:19 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 209, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(138): App\Models\backend\BackendModel->_getNumRows(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 17:50:20 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 209, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(138): App\Models\backend\BackendModel->_getNumRows(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 17:50:20 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 209, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(138): App\Models\backend\BackendModel->_getNumRows(Array, Object(stdClass))
+#2 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-09 18:05:16 --> fopen(C:\xampp\apps\b4t\writable\session/ci_sessionc1olurebv948qvdvpqe2b3ptd3b98aut): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(C:\\xampp\\...', 'C:\\xampp\\apps\\b...', 129, Array)
+#1 C:\xampp\apps\b4t\system\Session\Handlers\FileHandler.php(129): fopen('C:\\xampp\\apps\\b...', 'c+b')
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('c1olurebv948qvd...')
+#3 C:\xampp\apps\b4t\system\Session\Session.php(898): session_start()
+#4 C:\xampp\apps\b4t\system\Session\Session.php(238): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp\apps\b4t\system\Config\Services.php(577): CodeIgniter\Session\Session->start()
+#6 C:\xampp\apps\b4t\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#7 C:\xampp\apps\b4t\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\apps\b4t\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp\apps\b4t\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#10 C:\xampp\apps\b4t\system\Common.php(904): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\apps\b4t\app\Libraries\AuthorizationManager.php(16): session('backend_session')
+#12 C:\xampp\apps\b4t\app\Filters\Authorization.php(18): App\Libraries\AuthorizationManager->isLoggedIn()
+#13 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\Authorization->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#14 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/users/sho...', 'before')
+#15 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+ERROR - 2021-12-09 18:44:52 --> Unknown column 'transactions_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:44:52 --> Unknown column 'transactions_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:45:26 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:45:26 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:48:20 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:48:20 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-09 18:49:08 --> Undefined index: whichRecords
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 215, Array)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(142): App\Models\backend\BackendModel->_getNumRows(Array, false)
+#2 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-09 18:50:23 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:50:23 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:50:28 --> Unknown column 'transactions_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:50:28 --> Unknown column 'transactions_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:52:03 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:52:03 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:53:36 --> Unknown column 'contacts_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:53:36 --> Unknown column 'contacts_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:53:40 --> Unknown column 'transactions_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:53:40 --> Unknown column 'transactions_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 18:55:02 --> Unknown column 'transactions_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 18:55:02 --> Unknown column 'transactions_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `transac...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transac...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transac...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `transac...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\TransactionsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\TransactionsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\TransactionsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:30:37 --> Unknown column 'members_firstname' in 'field list'
+CRITICAL - 2021-12-09 20:30:37 --> Unknown column 'members_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:30:54 --> Unknown column 'members_firstname' in 'field list'
+CRITICAL - 2021-12-09 20:30:54 --> Unknown column 'members_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:30:56 --> Unknown column 'members_firstname' in 'field list'
+CRITICAL - 2021-12-09 20:30:56 --> Unknown column 'members_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:35:15 --> Unknown column 'members_firstname' in 'field list'
+CRITICAL - 2021-12-09 20:35:15 --> Unknown column 'members_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:36:22 --> Unknown column 'members_firstname' in 'field list'
+CRITICAL - 2021-12-09 20:36:22 --> Unknown column 'members_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-09 20:39:31 --> Unknown column '_deleted_at' in 'where clause'
+CRITICAL - 2021-12-09 20:39:31 --> Unknown column '_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(140): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(40): App\Models\backend\BackendModel->getData(Array, Object(stdClass))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-09 21:08:51 --> Undefined property: stdClass::$members_name
+#0 C:\xampp\apps\b4t\app\Views\backend\members\partials\_show_all_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 42, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/members...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(42): view('backend/members...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-09 21:16:49 --> Call to undefined method App\Controllers\backend\MembersController::_getNewsOr404()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->statusAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-09 21:17:35 --> Unknown column 'members_id members_firstname members_lastname members_vat members_email members_phone members_status members_created_at members_updated_at' in 'field list'
+CRITICAL - 2021-12-09 21:17:35 --> Unknown column 'members_id members_firstname members_lastname members_vat members_email members_phone members_status members_created_at members_updated_at' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(162): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(105): App\Models\backend\BackendModel->getID(1)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(90): App\Controllers\backend\MembersController->_getMemberOr404(1)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->statusAction()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-12-09 21:18:05 --> Unknown column 'members_vat' in 'field list'
+CRITICAL - 2021-12-09 21:18:05 --> Unknown column 'members_vat' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(162): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(105): App\Models\backend\BackendModel->getID(1)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(90): App\Controllers\backend\MembersController->_getMemberOr404(1)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->statusAction()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-09 21:18:42 --> Undefined property: stdClass::$members_name
+#0 C:\xampp\apps\b4t\app\Models\backend\MembersModel.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 129, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(95): App\Models\backend\MembersModel->statusAction(1, 1)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->statusAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-09 21:20:40 --> Undefined variable: member
+#0 C:\xampp\apps\b4t\app\Models\backend\MembersModel.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 129, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(95): App\Models\backend\MembersModel->statusAction(1, 2)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->statusAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

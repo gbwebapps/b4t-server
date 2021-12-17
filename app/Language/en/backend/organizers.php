@@ -1,0 +1,86 @@
+<?php
+
+return [
+	'title' => [
+		'main' => 'Organizers section', 
+		'list' => 'Organizers list', 
+		'add' => 'Add organizer', 
+		'edit' => 'Edit organizer', 
+		'show' => 'Show organizer', 
+	], 
+	'form' => [
+		'organizerField' => 'Organizer', 
+		'organizerPlaceholder' => 'Enter here the organizer name...', 
+		'addressField' => 'Address', 
+		'addressPlaceholder' => 'Enter here the organizer address...', 
+		'vatField' => 'VAT', 
+		'vatPlaceholder' => 'Enter here the organizer VAT...', 
+		'emailField' => 'Email', 
+		'emailPlaceholder' => 'Enter here the organizer email...', 
+		'phoneField' => 'Phone', 
+		'phonePlaceholder' => 'Enter here the organizer phone...', 
+		'coinsField' => 'Coins', 
+		'coinsPlaceholder' => 'Enter here the coins amount...', 
+		'shortDescriptionField' => 'Short description', 
+		'shortDescriptionFieldPlaceholder' => 'Enter here the circuit short description...', 
+		'longDescriptionField' => 'Long description', 
+		'longDescriptionFieldPlaceholder' => 'Enter here the circuit long description...', 
+		'filesField' => 'Organizer files', 
+		'circuitsField' => 'Circuits', 
+		'circuitsSelect' => '--- Select a circuit ---', 
+		'typesField' => 'Circuit type', 
+		'typesSelect' => '--- Select a circuit type ---', 
+		'coinsField' => 'Coins', 
+		'coinsPlaceholder' => 'Enter here the coins...', 
+	], 
+	'formHeader' => [], 
+	'formImage' => [], 
+	'formMetaTags' => [], 
+	'showAll' => [
+		'idColumn' => 'ID', 
+		'organizerColumn' => 'Organizer', 
+		'emailColumn' => 'Email', 
+		'phoneColumn' => 'Phone', 
+		'balanceColumn' => 'Balance', 
+		'idLabel' => 'ID', 
+		'idPlaceholder' => 'Search by ID...', 
+		'organizerLabel' => 'Organizer', 
+		'organizerPlaceholder' => 'Search by organizer...', 
+		'emailLabel' => 'Email', 
+		'emailPlaceholder' => 'Search by email...', 
+		'phoneLabel' => 'Phone', 
+		'phonePlaceholder' => 'Search by phone...', 
+	], 
+	'messages' => [
+		'insertSuccess' => 'The user <b>{0}</b>, with ID <b>{1}</b>, has been added successfully!', 
+		'insertNoMailSuccess' => 'The user <b>{0}</b>, with ID <b>{1}</b>, has been added successfully, 
+								  but there were some problems with email activation sending. Please, contact the administrator!', 
+		'insertFail' => 'There was an error in attempting to add the user!', 
+		'updateSuccess' => '<b>{0}</b> organizer, with ID <b>{1}</b>, has been updated successfully!', 
+		'updateFail' => 'There was an error in attempting to edit the organizer!', 
+		'updateNotChanged' => 'There are no changes about <b>{0}</b> organizer!',
+		'deleteSuccess' => '<b>{0}</b> organizer, with ID <b>{1}</b>, has been deleted successfully!', 
+		'deleteFail' => 'There was an error in attempting to delete the organizer!', 
+		'deleteConfirm' => 'Are you sure to delete {0} organizer?',
+		'restoreSuccess' => '<b>{0}</b> organizer, with ID <b>{1}</b>, has been restored successfully!', 
+		'restoreFail' => 'There was an error in attempting to restore the organizer!', 
+		'restoreConfirm' => 'Are you sure to restore {0} organizer?',
+	], 
+	'links' => [
+		'backToList' => 'Back to Organizer list', 
+	], 
+	'buttons' => [
+		'addCircuitsTypes' => 'Add to the organizer its own circuits'
+	], 
+	'panels' => [
+		'circuitsAndTypes' => 'Organizers circuits',
+	], 
+	'errors' => [
+		'circuitsError' => 'Circuit missing', 
+		'typesError' => 'Type missing', 
+		'coinsError' => 'Coins missing', 
+	], 
+	'placeholders' => [
+		'defaultType' => 'Default type...'
+	]
+];

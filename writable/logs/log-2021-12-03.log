@@ -1,0 +1,292 @@
+CRITICAL - 2021-12-03 11:31:43 --> Trying to get property 'users_firstname' of non-object
+#0 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\apps\\b...', 76, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 11:40:27 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+#0 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/templat...', NULL, true)
+#2 C:\xampp\apps\b4t\app\Views\backend\template\header_view.php(28): CodeIgniter\View\View->include('backend/templat...')
+#3 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/templat...', Array, true)
+#6 C:\xampp\apps\b4t\app\Views\backend\template\main_view.php(1): view('backend/templat...')
+#7 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#8 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\apps\b4t\system\View\View.php(230): CodeIgniter\View\View->render('backend/templat...', Array, true)
+#10 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#11 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(18): view('backend/dashboa...', Array)
+#12 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->index()
+#13 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#14 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-12-03 12:14:48 --> Class 'App\Models\backend\ProfileModel' not found
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\ProfileController->__construct()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-03 15:04:06 --> Too few arguments to function App\Models\backend\CircuitsModel::statusAction(), 2 passed in C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php on line 291 and exactly 3 expected
+#0 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(291): App\Models\backend\CircuitsModel->statusAction(2, 1)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->statusAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 15:04:32 --> Too few arguments to function App\Models\backend\CircuitsModel::statusAction(), 2 passed in C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php on line 291 and exactly 3 expected
+#0 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(291): App\Models\backend\CircuitsModel->statusAction(2, 1)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->statusAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 15:19:58 --> Undefined variable: currentUser
+#0 C:\xampp\apps\b4t\app\Models\backend\EventsModel.php(570): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 570, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(322): App\Models\backend\EventsModel->statusAction(2, 1, Object(stdClass))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->statusAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 15:35:54 --> Undefined variable: users
+#0 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 177, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(152): App\Models\backend\UsersModel->delete(3)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 15:38:59 --> Too few arguments to function App\Models\backend\UsersModel::statusAction(), 2 passed in C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php on line 174 and exactly 3 expected
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(174): App\Models\backend\UsersModel->statusAction(1, 2)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->statusAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 17:01:40 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\home\index_view.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 54, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/home/in...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\HomeController.php(17): view('backend/home/in...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\HomeController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\HomeController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 17:02:44 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\circuits\index_view.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 96, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/circuit...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(17): view('backend/circuit...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 17:03:09 --> Undefined property: stdClass::$circuits_created_by
+#0 C:\xampp\apps\b4t\app\Views\backend\circuits\partials\_show_view.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 120, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/circuit...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\circuits\show_view.php(41): CodeIgniter\View\View->include('backend/circuit...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/circuit...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(210): view('backend/circuit...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->show(3)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-03 17:04:13 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\circuits\index_view.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 96, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/circuit...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(17): view('backend/circuit...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 17:07:07 --> Undefined property: stdClass::$organizers_created_by
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_show_all_view.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 131, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(45): view('backend/organiz...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 17:07:18 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\events\index_view.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 94, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/events/...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(21): view('backend/events/...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 17:09:56 --> Undefined variable: circuit
+#0 C:\xampp\apps\b4t\app\Views\backend\news\partials\_show_view.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/news/pa...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\news\show_view.php(41): CodeIgniter\View\View->include('backend/news/pa...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/news/sh...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(160): view('backend/news/sh...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->show(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-03 17:33:06 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\home\index_view.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 54, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/home/in...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\HomeController.php(17): view('backend/home/in...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\HomeController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\HomeController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 18:32:29 --> syntax error, unexpected ']', expecting ')'
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(13): spl_autoload_call('App\\Models\\back...')
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\AuthController->__construct()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-03 18:33:17 --> syntax error, unexpected ']', expecting ')'
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(13): spl_autoload_call('App\\Models\\back...')
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\AuthController->__construct()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-03 18:34:14 --> Unknown column 'users_password' in 'field list'
+CRITICAL - 2021-12-03 18:34:14 --> Unknown column 'users_password' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `users` ...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(84): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(80): App\Models\backend\AuthModel->recovery(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->recoveryAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-03 18:34:38 --> Unknown column 'users_password' in 'field list'
+CRITICAL - 2021-12-03 18:34:38 --> Unknown column 'users_password' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `users` ...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(84): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(80): App\Models\backend\AuthModel->recovery(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->recoveryAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-03 18:35:12 --> Undefined variable: token
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 91, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(80): App\Models\backend\AuthModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 18:38:57 --> Invalid file: backend//recovery_email_view.php
+#0 C:\xampp\apps\b4t\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend//recove...')
+#1 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend//recove...', Array, true)
+#2 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(371): view('backend//recove...', Array)
+#3 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(99): App\Models\backend\BackendModel->sendEmail(Array)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(80): App\Models\backend\AuthModel->recovery(Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->recoveryAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-03 18:41:15 --> Undefined variable: id
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 107, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(80): App\Models\backend\AuthModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 21:18:45 --> syntax error, unexpected ':'
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(13): spl_autoload_call('App\\Models\\back...')
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\AuthController->__construct()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-03 21:38:13 --> Undefined property: App\Models\backend\AuthModel::$buider
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 158, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(139): App\Models\backend\AuthModel->logout()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->logout()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 21:38:20 --> Undefined property: App\Models\backend\AuthModel::$buider
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 158, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(139): App\Models\backend\AuthModel->logout()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->logout()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 21:54:30 --> authorizationAdmin filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authorizationAd...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('authorizationAd...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-03 21:55:43 --> Trying to get property 'users_role' of non-object
+#0 C:\xampp\apps\b4t\app\Filters\AuthorizationAdmin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\apps\\b...', 20, Array)
+#1 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\AuthorizationAdmin->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/auth/logi...', 'before')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-03 22:53:24 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(323): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 323, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(112): App\Models\backend\BackendModel->sectionAction(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\BackendController->sectionAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-03 22:53:34 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(323): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 323, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(112): App\Models\backend\BackendModel->sectionAction(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\BackendController->sectionAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

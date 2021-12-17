@@ -1,0 +1,134 @@
+CRITICAL - 2021-12-06 11:03:46 --> unlink(./files/users/section/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./files/...', 'C:\\xampp\\apps\\b...', 285)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(285): unlink('./files/users/s...')
+#2 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(217): App\Models\backend\BackendModel->removeImages(NULL)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(212): App\Models\backend\UsersModel->delete(2)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 11:05:35 --> unlink(./files/users/section/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./files/...', 'C:\\xampp\\apps\\b...', 285)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(285): unlink('./files/users/s...')
+#2 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(217): App\Models\backend\BackendModel->removeImages(NULL)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(212): App\Models\backend\UsersModel->delete(3)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 11:11:58 --> unlink(./files/users/section/): Is a directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./files/...', 'C:\\xampp\\apps\\b...', 285)
+#1 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(285): unlink('./files/users/s...')
+#2 C:\xampp\apps\b4t\app\Models\backend\UsersModel.php(217): App\Models\backend\BackendModel->removeImages(NULL)
+#3 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(212): App\Models\backend\UsersModel->delete(4)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->deleteAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-06 11:51:22 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$users_activation_expire
+#0 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 147)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(94): App\Models\backend\AuthModel->checkAuthCode('8318c74d9673994...')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->setPassword('8318c74d9673994...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-06 11:54:02 --> Unclosed '[' does not match ')'
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\backend\AuthController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 12:48:33 --> App\Models\backend\UsersModel::resetPassword(): Argument #1 ($id) must be of type int, null given, called in C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php on line 357
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(357): App\Models\backend\UsersModel->resetPassword(NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->resetPassword()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 15:59:55 --> Call to undefined method stdClass::getRow()
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(98): App\Models\backend\UsersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->addAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 16:00:40 --> Call to undefined method stdClass::getRow()
+#0 C:\xampp\apps\b4t\app\Controllers\backend\UsersController.php(98): App\Models\backend\UsersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\UsersController->addAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\UsersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 17:31:04 --> Undefined property: stdClass::$organizers_coins
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_edit_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 83)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/organiz...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\organizers\edit_view.php(41): CodeIgniter\View\View->include('backend/organiz...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(125): view('backend/organiz...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->edit(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 17:42:23 --> Undefined property: stdClass::$organizers_coins
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_edit_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 83)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/organiz...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\organizers\edit_view.php(41): CodeIgniter\View\View->include('backend/organiz...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(125): view('backend/organiz...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->edit(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 17:42:43 --> Undefined property: stdClass::$organizers_coins
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\partials\_edit_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 83)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/organiz...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\organizers\edit_view.php(41): CodeIgniter\View\View->include('backend/organiz...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(125): view('backend/organiz...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->edit(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 17:43:17 --> Undefined property: App\Models\backend\OrganizersModel::$validationRules
+#0 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 165)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 17:43:27 --> Undefined property: App\Models\backend\OrganizersModel::$validationRules
+#0 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 165)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-06 17:43:37 --> Undefined property: App\Models\backend\OrganizersModel::$validationRules
+#0 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 165)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->editAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

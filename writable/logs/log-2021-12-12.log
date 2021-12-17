@@ -1,0 +1,22 @@
+CRITICAL - 2021-12-12 14:03:54 --> Undefined property: stdClass::$contacts_deleted_at
+#0 C:\xampp\apps\b4t\app\Models\backend\ContactsModel.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 64, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(76): App\Models\backend\ContactsModel->delete(4)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 14:04:03 --> Undefined property: stdClass::$contacts_deleted_at
+#0 C:\xampp\apps\b4t\app\Models\backend\ContactsModel.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 64, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(76): App\Models\backend\ContactsModel->delete(4)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->deleteAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-12 20:28:40 --> noOrganizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noOrganizersAut...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noOrganizersAut...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

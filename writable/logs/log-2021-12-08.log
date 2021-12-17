@@ -1,0 +1,52 @@
+ERROR - 2021-12-08 22:18:30 --> Unknown column 'circuits_status' in 'where clause'
+CRITICAL - 2021-12-08 22:18:30 --> Unknown column 'circuits_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(32): App\Libraries\StatisticsManager->countAllInactivated('circuits')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 22:18:43 --> Unknown column 'circuits_status' in 'where clause'
+CRITICAL - 2021-12-08 22:18:43 --> Unknown column 'circuits_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(32): App\Libraries\StatisticsManager->countAllInactivated('circuits')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 22:20:11 --> Unknown column 'circuits_status' in 'field list'
+CRITICAL - 2021-12-08 22:20:11 --> Unknown column 'circuits_status' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-08 22:20:15 --> Unknown column 'organizers_status' in 'field list'
+CRITICAL - 2021-12-08 22:20:15 --> Unknown column 'organizers_status' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

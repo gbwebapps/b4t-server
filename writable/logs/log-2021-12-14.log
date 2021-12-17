@@ -1,0 +1,39 @@
+CRITICAL - 2021-12-14 11:30:51 --> noOrganizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noOrganizersAut...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noOrganizersAut...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-14 12:44:17 --> organizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('organizersAutho...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('organizersAutho...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-14 12:50:32 --> Class "App\Models\backend\Token" not found
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-14 12:50:44 --> Class "App\Models\backend\Token" not found
+#0 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-14 12:51:23 --> Column 'sessions_entity_id' cannot be null
+CRITICAL - 2021-12-14 12:51:23 --> Column 'sessions_entity_id' cannot be null
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `se...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\AuthModel.php(71): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(43): App\Models\backend\AuthModel->login(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->loginAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\AuthController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

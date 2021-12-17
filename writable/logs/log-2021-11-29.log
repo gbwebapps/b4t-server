@@ -1,0 +1,360 @@
+CRITICAL - 2021-11-29 11:42:29 --> Call to undefined method App\Controllers\backend\EventsController::_getNewsOr404()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->statusAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-29 12:05:37 --> syntax error, unexpected integer "2"
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\back...')
+#2 C:\xampp\apps\b4t\app\Config\Services.php(48): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\back...')
+#3 C:\xampp\apps\b4t\system\Config\BaseService.php(189): Config\Services::circuits(false)
+#4 C:\xampp\apps\b4t\app\Config\Services.php(45): CodeIgniter\Config\BaseService::getSharedInstance('circuits')
+#5 C:\xampp\apps\b4t\system\Common.php(932): Config\Services::circuits()
+#6 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(60): service('circuits')
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-11-29 12:06:39 --> Undefined variable $circuits
+#0 C:\xampp\apps\b4t\app\Views\backend\circuits\partials\_show_all_view.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 76)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/circuit...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CircuitsController.php(45): view('backend/circuit...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CircuitsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CircuitsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-29 12:16:49 --> Unknown column 'organizers_status' in 'field list'
+CRITICAL - 2021-11-29 12:16:49 --> Unknown column 'organizers_status' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(134): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(43): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-29 12:18:47 --> Call to undefined method App\Controllers\backend\OrganizersController::_getCircuitOr404()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->statusAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-29 12:41:44 --> Unknown column 'members_status' in 'where clause'
+CRITICAL - 2021-11-29 12:41:44 --> Unknown column 'members_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(29): App\Libraries\StatisticsManager->countAllInactivated('members')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-29 12:44:05 --> Unknown column 'orders_status' in 'where clause'
+CRITICAL - 2021-11-29 12:44:05 --> Unknown column 'orders_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(29): App\Libraries\StatisticsManager->countAllInactivated('orders')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-29 12:47:48 --> Undefined variable $circuits_deleted
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 12:49:02 --> Undefined variable $circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 12:50:56 --> Undefined variable $circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-29 12:53:28 --> Unknown column 'transactions_status' in 'where clause'
+CRITICAL - 2021-11-29 12:53:28 --> Unknown column 'transactions_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(30): App\Libraries\StatisticsManager->countAllInactivated('transactions')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-11-29 12:54:12 --> Unknown column 'transactions_status' in 'where clause'
+CRITICAL - 2021-11-29 12:54:12 --> Unknown column 'transactions_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT COUNT(*)...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1512): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\StatisticsManager.php(28): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(30): App\Libraries\StatisticsManager->countAllInactivated('transactions')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-29 12:54:37 --> Undefined variable $circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 12:56:57 --> Undefined variable $transactions
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 75)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(32): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 13:00:32 --> Undefined variable $circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 13:01:21 --> Undefined variable $circuits_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 7)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(34): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 13:02:33 --> Undefined variable $transactions_inactivated
+#0 C:\xampp\apps\b4t\app\Views\backend\dashboard\partials\_general_stats_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 75)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/dashboa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\DashboardController.php(36): view('backend/dashboa...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\DashboardController->getGeneralStats()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\DashboardController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 13:08:20 --> syntax error, unexpected token "->", expecting "elseif" or "else" or "endif"
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\D...')
+#2 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(67): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\D...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 13:12:26 --> syntax error, unexpected token "="
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(5): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#5 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-11-29 13:12:44 --> Call to a member function usersDropdown() on null
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-29 14:58:09 --> Invalid file: backend/contacts/partials/_index_view.php
+#0 C:\xampp\apps\b4t\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/contact...')
+#1 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/contact...', NULL, true)
+#2 C:\xampp\apps\b4t\app\Views\frontend\contacts\index_view.php(21): CodeIgniter\View\View->include('backend/contact...')
+#3 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/contac...', Array, true)
+#6 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(22): view('frontend/contac...', Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->index()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-11-29 14:58:34 --> Invalid file: backend/contacts/partials/_index_action_view.php
+#0 C:\xampp\apps\b4t\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/contact...')
+#1 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/contact...', NULL, true)
+#2 C:\xampp\apps\b4t\app\Views\frontend\contacts\index_view.php(21): CodeIgniter\View\View->include('backend/contact...')
+#3 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#4 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/contac...', Array, true)
+#6 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(22): view('frontend/contac...', Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->index()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-11-29 15:33:59 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\ContactsController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 15:33:59 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\ContactsController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 15:33:59 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\ContactsController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 15:33:59 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\ContactsController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 15:33:59 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\ContactsController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-29 16:36:44 --> Call to undefined method App\Models\frontend\ContactsModel::addAndSend()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->indexAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-29 16:38:01 --> Call to undefined method App\Models\frontend\ContactsModel::_checkAllowedFields()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(43): App\Models\frontend\ContactsModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->indexAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-29 16:42:11 --> Unknown column 'contacts_message' in 'field list'
+CRITICAL - 2021-11-29 16:42:11 --> Unknown column 'contacts_message' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `co...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\ContactsModel.php(51): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(43): App\Models\frontend\ContactsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->indexAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-29 16:43:17 --> Call to undefined method App\Models\frontend\ContactsModel::getID()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\ContactsController.php(43): App\Models\frontend\ContactsModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\ContactsController->indexAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\ContactsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-29 17:45:06 --> Undefined array key "itemLastPage"
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\partials\_show_all_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\apps\\b...', 9)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(50): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 17:51:06 --> Undefined property: stdClass::$contacts_deleted_at
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\partials\_show_all_view.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 71)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(50): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 17:54:31 --> Undefined variable $color
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\partials\_show_all_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 75)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(50): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-29 18:41:41 --> Cannot access private property App\Controllers\backend\ContactsController::$contactsModel
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\BackendController->sectionAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

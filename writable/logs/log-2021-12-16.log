@@ -1,0 +1,567 @@
+CRITICAL - 2021-12-16 10:18:57 --> Undefined variable $token
+#0 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 308)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-16 10:19:46 --> Undefined variable $token
+#0 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 308)
+#1 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-16 10:29:19 --> Class "App\Models\backend\Token" not found
+#0 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 10:29:56 --> Undefined variable $firstname
+#0 C:\xampp\apps\b4t\app\Views\backend\organizers\_set_password_email_view.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 68)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/organiz...', Array, true)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(403): view('backend/organiz...', Array)
+#5 C:\xampp\apps\b4t\app\Models\backend\OrganizersModel.php(319): App\Models\backend\BackendModel->sendEmail(Array)
+#6 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-16 10:34:01 --> App\Models\backend\OrganizersModel::add(): Return value must be of type array, none returned
+#0 C:\xampp\apps\b4t\app\Controllers\backend\OrganizersController.php(108): App\Models\backend\OrganizersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\OrganizersController->addAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\OrganizersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-16 10:46:52 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-16 10:46:52 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(198): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(221): App\Models\frontend\OrganizersModel->setPassword(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->setPasswordAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:47:44 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-16 10:47:44 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(198): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(221): App\Models\frontend\OrganizersModel->setPassword(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->setPasswordAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:47:54 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-16 10:47:54 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(198): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(221): App\Models\frontend\OrganizersModel->setPassword(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->setPasswordAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:49:03 --> Unknown column 'organizers_firstname' in 'field list'
+CRITICAL - 2021-12-16 10:49:03 --> Unknown column 'organizers_firstname' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(198): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(221): App\Models\frontend\OrganizersModel->setPassword(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->setPasswordAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:51:51 --> Unknown column 'organizers_status' in 'field list'
+CRITICAL - 2021-12-16 10:51:51 --> Unknown column 'organizers_status' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('UPDATE `organiz...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `organiz...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `organiz...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `organiz...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\OrganizersModel.php(202): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\OrganizersController.php(221): App\Models\frontend\OrganizersModel->setPassword(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\OrganizersController->setPasswordAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\OrganizersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 10:53:31 --> Unknown column 'organizers_status' in 'where clause'
+CRITICAL - 2021-12-16 10:53:31 --> Unknown column 'organizers_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1561): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\AuthorizationOrganizersManager.php(83): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\apps\b4t\app\Libraries\AuthorizationOrganizersManager.php(38): App\Libraries\AuthorizationOrganizersManager->getCurrentOrganizer(Array)
+#6 C:\xampp\apps\b4t\app\Libraries\AuthorizationOrganizersManager.php(18): App\Libraries\AuthorizationOrganizersManager->getOrganizerFromSession()
+#7 C:\xampp\apps\b4t\app\Filters\OrganizersAuthorization.php(18): App\Libraries\AuthorizationOrganizersManager->isLoggedIn()
+#8 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\OrganizersAuthorization->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('organizers/acco...', 'before')
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-12-16 11:10:48 --> Object of class App\Libraries\Token could not be converted to string
+#0 C:\xampp\apps\b4t\system\View\View.php(214): include()
+#1 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/member...', Array, true)
+#3 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(271): view('frontend/member...', Array)
+#4 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(226): App\Models\frontend\FrontendModel->sendEmail(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(180): App\Models\frontend\MembersModel->register(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 11:11:33 --> Object of class App\Libraries\Token could not be converted to string
+#0 C:\xampp\apps\b4t\system\View\View.php(214): include()
+#1 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/member...', Array, true)
+#3 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(271): view('frontend/member...', Array)
+#4 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(226): App\Models\frontend\FrontendModel->sendEmail(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(180): App\Models\frontend\MembersModel->register(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 11:56:57 --> Class "App\Filters\UsersCheckRole" not found
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/users/sho...', 'before')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-12-16 11:57:17 --> Class "App\Filters\UsersCheckRole" not found
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/users/sho...', 'before')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-12-16 11:57:19 --> Class "App\Filters\UsersCheckRole" not found
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/users/add', 'before')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2021-12-16 11:58:02 --> Call to a member function isLoggedIn() on null
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(169): App\Filters\UsersCheckRole->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(374): CodeIgniter\Filters\Filters->run('admin/users/add', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-16 12:55:13 --> Undefined variable $events
+#0 C:\xampp\apps\b4t\app\Views\backend\events\show_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 36)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/events/...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(199): view('backend/events/...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->show(1)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-16 12:55:25 --> Undefined variable $events
+#0 C:\xampp\apps\b4t\app\Views\backend\events\show_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 36)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/events/...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\EventsController.php(199): view('backend/events/...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\EventsController->show(1)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\EventsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-16 12:56:48 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-16 12:56:48 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\NewsModel.php(155): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(100): App\Models\backend\NewsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 13:00:31 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-16 13:00:31 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\NewsModel.php(155): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(100): App\Models\backend\NewsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 14:19:31 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-16 14:19:31 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`news`, CONSTRAINT `FK_organizer_id_4` FOREIGN KEY (`news_organizer_id`) REFERENCES `organizers` (`organizers_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `ne...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\NewsModel.php(155): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(100): App\Models\backend\NewsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 14:40:32 --> Undefined variable $new
+#0 C:\xampp\apps\b4t\app\Views\backend\news\edit_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 36)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/news/ed...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(117): view('backend/news/ed...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->edit(2)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-16 14:40:45 --> Undefined variable $new
+#0 C:\xampp\apps\b4t\app\Views\backend\news\edit_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 36)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/news/ed...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\NewsController.php(117): view('backend/news/ed...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\NewsController->edit(2)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\NewsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-16 14:59:14 --> Subquery returns more than 1 row
+CRITICAL - 2021-12-16 14:59:14 --> Subquery returns more than 1 row
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `news_id...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news_id...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news_id...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `news_id...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\HomeModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\HomeController.php(23): App\Models\frontend\HomeModel->getData('news')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\HomeController->index()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\HomeController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 14:59:29 --> Subquery returns more than 1 row
+CRITICAL - 2021-12-16 14:59:29 --> Subquery returns more than 1 row
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `news_id...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news_id...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news_id...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `news_id...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\HomeModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\HomeController.php(23): App\Models\frontend\HomeModel->getData('news')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\HomeController->index()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\HomeController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:16:24 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:16:24 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:16:32 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:16:32 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:16:53 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:16:53 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:26 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:26 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:27 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:27 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:27 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:27 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:28 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:28 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:36 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:36 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:18:50 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:18:50 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:19:08 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:19:08 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 16:19:15 --> Unknown column 'comments_deleted_at' in 'where clause'
+CRITICAL - 2021-12-16 16:19:15 --> Unknown column 'comments_deleted_at' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 16:40:40 --> Undefined variable $membersDropdown
+#0 C:\xampp\apps\b4t\app\Views\backend\comments\show_all_view.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 97)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/comment...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(20): view('backend/comment...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAll()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-16 16:40:51 --> Undefined variable $membersDropdown
+#0 C:\xampp\apps\b4t\app\Views\backend\comments\show_all_view.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 97)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/comment...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(20): view('backend/comment...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAll()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-16 16:48:42 --> Unknown column 'members_name' in 'order clause'
+CRITICAL - 2021-12-16 16:48:42 --> Unknown column 'members_name' in 'order clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Libraries\DropdownsManager.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\BackendController.php(71): App\Libraries\DropdownsManager->membersDropdown()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(780): App\Controllers\backend\BackendController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 17:21:14 --> Undefined property: App\Models\backend\CommentsModel::$validationRules
+#0 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 78)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->addAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 17:44:38 --> Call to undefined method App\Models\backend\CommentsModel::add()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->addAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-16 17:49:35 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`comments`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`comments_member_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-16 17:49:35 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`comments`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`comments_member_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `co...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\CommentsModel.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(91): App\Models\backend\CommentsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 17:50:18 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`comments`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`comments_member_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2021-12-16 17:50:18 --> Cannot add or update a child row: a foreign key constraint fails (`b4t`.`comments`, CONSTRAINT `FK_member_id_1` FOREIGN KEY (`comments_member_id`) REFERENCES `members` (`members_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `co...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\CommentsModel.php(75): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(91): App\Models\backend\CommentsModel->add(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->addAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 17:50:52 --> Undefined property: stdClass::$comments_name
+#0 C:\xampp\apps\b4t\app\Views\backend\comments\partials\_show_all_view.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 80)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/comment...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(42): view('backend/comment...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-16 18:08:38 --> Unknown column 'event_id' in 'where clause'
+CRITICAL - 2021-12-16 18:08:38 --> Unknown column 'event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-12-16 18:13:22 --> Unknown column 'members_event_id' in 'where clause'
+CRITICAL - 2021-12-16 18:13:22 --> Unknown column 'members_event_id' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *, (sele...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (sele...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (sele...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *, (sele...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\backend\BackendModel.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(40): App\Models\backend\BackendModel->getData(Array)
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->showAllAction()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-16 18:21:20 --> Call to undefined method App\Models\backend\CommentsModel::statusAction()
+#0 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->statusAction()
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-16 18:27:06 --> Undefined variable $comment
+#0 C:\xampp\apps\b4t\app\Views\backend\comments\partials\_edit_view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 32)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/comment...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\comments\edit_view.php(34): CodeIgniter\View\View->include('backend/comment...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/comment...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(106): view('backend/comment...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->edit('1')
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-16 18:47:21 --> Undefined property: stdClass::$event
+#0 C:\xampp\apps\b4t\app\Views\backend\comments\partials\_show_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 12)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/comment...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\comments\show_view.php(41): CodeIgniter\View\View->include('backend/comment...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/comment...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\CommentsController.php(184): view('backend/comment...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\CommentsController->show(1)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\CommentsController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

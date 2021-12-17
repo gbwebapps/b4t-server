@@ -1,0 +1,347 @@
+CRITICAL - 2021-12-11 17:50:59 --> Argument 3 passed to App\Validation\CustomRules::checkActivationCode() must be of the type string or null, array given, called in C:\xampp\apps\b4t\system\Validation\Validation.php on line 277
+#0 C:\xampp\apps\b4t\system\Validation\Validation.php(277): App\Validation\CustomRules->checkActivationCode('680554557f5d4b6...', 'members', Array, NULL)
+#1 C:\xampp\apps\b4t\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('members_code', 'frontend/member...', '680554557f5d4b6...', Array, Array)
+#2 C:\xampp\apps\b4t\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(91): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 17:57:26 --> Undefined index: members_code
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 123, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 18:01:36 --> Call to undefined method App\Models\frontend\MembersModel::allowedSetPasswordFields()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 18:12:10 --> Uncaught ErrorException: Undefined variable: str in C:\xampp\apps\b4t\app\Validation\CustomBackendRules.php:23
+Stack trace:
+#0 C:\xampp\apps\b4t\app\Validation\CustomBackendRules.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 23, Array)
+#1 C:\xampp\apps\b4t\system\Validation\Validation.php(277): App\Validation\CustomBackendRules->checkActivationCode('6af0bc8323f1679...', NULL)
+#2 C:\xampp\apps\b4t\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('auth_code', 'backend/auth.fo...', '6af0bc8323f1679...', Array, Array)
+#3 C:\xampp\apps\b4t\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(114): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->setPasswordAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 18:12:29 --> Uncaught ErrorException: Undefined variable: str in C:\xampp\apps\b4t\app\Validation\CustomBackendRules.php:23
+Stack trace:
+#0 C:\xampp\apps\b4t\app\Validation\CustomBackendRules.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 23, Array)
+#1 C:\xampp\apps\b4t\system\Validation\Validation.php(277): App\Validation\CustomBackendRules->checkActivationCode('6af0bc8323f1679...', NULL)
+#2 C:\xampp\apps\b4t\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('auth_code', 'backend/auth.fo...', '6af0bc8323f1679...', Array, Array)
+#3 C:\xampp\apps\b4t\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#4 C:\xampp\apps\b4t\app\Controllers\backend\AuthController.php(114): CodeIgniter\Controller->validate(Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\AuthController->setPasswordAction()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-11 18:14:07 --> in_array() expects parameter 2 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\apps\\b...', 137, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(137): in_array('csrf_test_name', NULL)
+#2 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(122): App\Models\frontend\FrontendModel->_checkAllowedFields(Array)
+#3 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 18:14:18 --> in_array() expects parameter 2 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\apps\\b...', 137, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(137): in_array('csrf_test_name', NULL)
+#2 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(122): App\Models\frontend\FrontendModel->_checkAllowedFields(Array)
+#3 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 18:14:32 --> in_array() expects parameter 2 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\apps\\b...', 137, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(137): in_array('csrf_test_name', NULL)
+#2 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(122): App\Models\frontend\FrontendModel->_checkAllowedFields(Array)
+#3 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-11 18:16:01 --> Undefined index: members_code
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 124, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 18:17:01 --> Undefined index: members_code
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 124, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(102): App\Models\frontend\MembersModel->setPassword(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPasswordAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 19:04:06 --> Call to undefined function App\Models\frontend\random_string()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 19:04:13 --> Call to undefined function App\Models\frontend\random_string()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(56): App\Models\frontend\MembersModel->login(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->loginAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 19:21:57 --> noMembersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noMembersAuthor...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noMembersAuthor...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-11 20:08:58 --> noOrganizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noOrganizersAut...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noOrganizersAut...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-11 20:16:26 --> Undefined index: members_email
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 134, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 20:16:39 --> Undefined index: members_email
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 134, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 20:17:25 --> Undefined index: members_email
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 134, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 20:17:37 --> Undefined index: members_email
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 134, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 20:18:55 --> Undefined index: members_email
+#0 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 134, Array)
+#1 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-11 20:19:33 --> Undefined index: controller
+#0 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 262, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(153): App\Models\frontend\FrontendModel->sendEmail(Array)
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 20:19:46 --> Undefined index: controller
+#0 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 262, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(153): App\Models\frontend\FrontendModel->sendEmail(Array)
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 20:20:51 --> Undefined index: controller
+#0 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 262, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(153): App\Models\frontend\FrontendModel->sendEmail(Array)
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 20:35:08 --> Undefined index: controller
+#0 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\apps\\b...', 262, Array)
+#1 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(153): App\Models\frontend\FrontendModel->sendEmail(Array)
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(95): App\Models\frontend\MembersModel->recovery(Array)
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-11 20:39:41 --> noOrganizersAuthorization filter must have a matching alias defined.
+#0 C:\xampp\apps\b4t\system\Filters\Filters.php(338): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noOrganizersAut...')
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(366): CodeIgniter\Filters\Filters->enableFilter('noOrganizersAut...', 'before')
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-11 22:19:24 --> Undefined property: stdClass::$members_role
+#0 C:\xampp\apps\b4t\app\Views\backend\members\partials\_show_view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 58, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/members...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\members\show_view.php(34): CodeIgniter\View\View->include('backend/members...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/members...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(57): view('backend/members...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->show(4)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-11 22:19:53 --> Undefined property: stdClass::$members_image
+#0 C:\xampp\apps\b4t\app\Views\backend\members\partials\_show_view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 56, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/members...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\members\show_view.php(34): CodeIgniter\View\View->include('backend/members...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/members...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(57): view('backend/members...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->show(4)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-11 22:23:40 --> Undefined property: stdClass::$members_role
+#0 C:\xampp\apps\b4t\app\Views\backend\members\partials\_show_view.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 58, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\View\View.php(432): CodeIgniter\View\View->render('backend/members...', NULL, true)
+#4 C:\xampp\apps\b4t\app\Views\backend\members\show_view.php(34): CodeIgniter\View\View->include('backend/members...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/members...', Array, true)
+#8 C:\xampp\apps\b4t\app\Controllers\backend\MembersController.php(57): view('backend/members...', Array)
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\MembersController->show(4)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\MembersController))
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-11 22:39:35 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 22:39:43 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 22:43:52 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 23:11:47 --> Undefined property: App\Models\frontend\MembersModel::$recoveryRules
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 23:12:00 --> Undefined property: App\Models\frontend\MembersModel::$recoveryRules
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 23:12:01 --> Undefined property: App\Models\frontend\MembersModel::$recoveryRules
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 23:12:08 --> Undefined property: App\Models\frontend\MembersModel::$recoveryRules
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 23:12:29 --> Undefined property: App\Models\frontend\MembersModel::$recoveryRules
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 82, Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->recoveryAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-11 23:34:45 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 23:34:54 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-11 23:36:46 --> Undefined property: stdClass::$sections_updated_by
+#0 C:\xampp\apps\b4t\app\Views\backend\contacts\index_view.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 89, Array)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('backend/contact...', Array, true)
+#4 C:\xampp\apps\b4t\app\Controllers\backend\ContactsController.php(17): view('backend/contact...', Array)
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\backend\ContactsController->index()
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\backend\ContactsController))
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

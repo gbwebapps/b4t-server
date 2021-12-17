@@ -1,0 +1,52 @@
+1) Quando si fa il redirect per authorization code e authorization expire nel caso non rispondessero ai requisiti, 
+redirezionare ad una pagina comprensibile o mostrare una vista comprensibile
+
+2) rivedi la gestione account
+	a) se sei il master, da account non riesci a fare il refresh o inviare i dati e nemmeno resettare la password
+	   perché vieni bloccato dal controller in quanto risulti essere master e quindi protetto
+	b) se sei administrator, da account non riesci a fare il refresh ma si inviare i dati o resettarti la password
+	c) Se sei editor non riesci a fare il refresh, ma si inviare i dati, non resettarti la password
+Tutto nasce dal fatto che vuoi proteggere a livello di controller il master, quindi le cose si complicano un pò
+Nel controller user si viene bloccati se $user->users_master == 1, ecco perché il master non può fare nulla
+Il filtro CheckRole blocca il reset password se si è un editor, ecco perché l'editor non riesce a resettarsi la password, 
+perché il filtro è applicato alla route resetPassword
+
+Master, Admin ed Editor non riescono a fare il refresh
+Solo Admin ed Editor si inviano i dati
+Solo Admin riesce a resettarsi la password
+
+3) Gioco degli 'HA SENSO lo status...'
+	a) Lo status ha senso in circuits? no, appena inserito un circuito questo è subito visibile in home page -- VA TOLTO
+	b) Lo status ha senso in organizers? no, appena inserito un organizer questo è subito visibile in home page -- VA TOLTO
+	c) Lo status ha senso in Events? si, perché l'evento creato deve essere approvato dalla direzione prima di essere pubblicato
+		Quando si crea un evento, una mail avvisa la direzione per l'approvazione
+		Quando l'evento viene approvato, questo viene pubblicato e una email arriva all'organizzatore per avviso.
+	d) Lo status ha senso in transactions? no, infatti non c'é
+	e) Lo status ha senso in members? Si, perché un membro può essere bannato per motivi disciplinari
+		Quando un members si registra, una email viene inviata alla direzione per informazione, ma il members è subito attivo
+	f) Lo status ha senso in comments? Si perché in un dato momento dobbiamo essere in grado di disabilitarlo oltre che approvarlo
+		Quando viene inserito un commento, viene inviata una email alla direzione per l'approvazione
+		Viene anche inviata una email all'organizzatore dell'evento
+	g) Lo status ha senso in orders? no, va tolto
+	h) Lo status ha senso in news? Si perché ogni news va approvata dalla direzione per essere pubblicata
+		Quando viene inserita una news, una email arriva alla direzione per l'approvazione.
+		Quando la news viene approvata, questa viene pubblicata e una email arriva all'organizzatore per avviso.
+	i) Lo status ha senso in contacts? no, infatti non c'é
+
+- Piccolo bug immagine account quando si modificano solo i dati
+- Mettere in cache le queries
+- Sistemare il path delle foto degli users e members che punta a section
+- Personalizza il messaggio in Users per il master protetto nelle chiamate ajax
+- Sistema grafica dell'avatar in alto a destra- Ricorda che tutti i logout devono essere chiamate ajax per pulire i local storage
+
+PRIME COSE DA FARE
+- Avendo rimesso il soft delete, vedi se è il caso di inserire nuovamente nel js il cerca per delete at
+- Fare in modo che negli show all, il link visualizza trashed o visualizza regular non sia in hard coding ma prenda la traduzione (La devi fare prendere da javascript)
+- inizializza le sezioni Orders, Comments in admin con relativi javascript e campi di ricerca avanzata
+- Capire dove mettere le emails e metterle
+- Creare i files di configurazione
+- humanize datetime
+
+16 Dicembre
+- Mettere il greeting in alto a destra
+- arieccolo

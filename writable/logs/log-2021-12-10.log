@@ -1,0 +1,87 @@
+ERROR - 2021-12-10 09:59:44 --> Unknown column 'circuits_status' in 'where clause'
+CRITICAL - 2021-12-10 09:59:44 --> Unknown column 'circuits_status' in 'where clause'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `circuit...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `circuit...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `circuit...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `circuit...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\HomeModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Controllers\frontend\HomeController.php(23): App\Models\frontend\HomeModel->getData('circuits')
+#6 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\HomeController->index()
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\HomeController))
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-10 14:56:01 --> Undefined property: App\Controllers\frontend\MembersController::$membersModel
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 99)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 16:00:54 --> Undefined property: App\Controllers\frontend\MembersController::$membersModel
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 99)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 16:01:00 --> Undefined property: App\Controllers\frontend\MembersController::$membersModel
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\apps\\b...', 99)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 16:01:32 --> syntax error, unexpected token "=", expecting variable
+#0 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\apps\\b...')
+#1 C:\xampp\apps\b4t\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\fron...')
+#2 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\fron...')
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(779): App\Controllers\frontend\MembersController->__construct()
+#4 C:\xampp\apps\b4t\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-10 16:22:57 --> Unknown column 'members_id members_firstname members_lastname members_address members_tax_code members_email' in 'field list'
+CRITICAL - 2021-12-10 16:22:57 --> Unknown column 'members_id members_firstname members_lastname members_address members_tax_code members_email' in 'field list'
+#0 C:\xampp\apps\b4t\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT `members...')
+#1 C:\xampp\apps\b4t\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `members...')
+#2 C:\xampp\apps\b4t\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `members...')
+#3 C:\xampp\apps\b4t\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `members...', Array, false)
+#4 C:\xampp\apps\b4t\app\Models\frontend\FrontendModel.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\apps\b4t\app\Models\frontend\MembersModel.php(85): App\Models\frontend\FrontendModel->getID(1)
+#6 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(112): App\Models\frontend\MembersModel->add(Array)
+#7 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#8 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#9 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-10 17:47:01 --> Call to undefined method App\Models\frontend\MembersModel::sendEmail()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(112): App\Models\frontend\MembersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 17:48:33 --> Call to undefined method App\Models\frontend\MembersModel::sendEmail()
+#0 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(112): App\Models\frontend\MembersModel->add(Array)
+#1 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->registerAction()
+#2 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#3 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 18:16:00 --> Undefined variable $title
+#0 C:\xampp\apps\b4t\app\Views\frontend\template\header_view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\apps\\b...', 40)
+#1 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#2 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/templa...', Array, true)
+#4 C:\xampp\apps\b4t\app\Views\frontend\template\main_view.php(1): view('frontend/templa...')
+#5 C:\xampp\apps\b4t\system\View\View.php(214): include('C:\\xampp\\apps\\b...')
+#6 C:\xampp\apps\b4t\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\apps\b4t\system\View\View.php(230): CodeIgniter\View\View->render('frontend/templa...', Array, true)
+#8 C:\xampp\apps\b4t\system\Common.php(1092): CodeIgniter\View\View->render('frontend/member...', Array, true)
+#9 C:\xampp\apps\b4t\app\Controllers\frontend\MembersController.php(74): view('frontend/member...', Array)
+#10 C:\xampp\apps\b4t\system\CodeIgniter.php(802): App\Controllers\frontend\MembersController->setPassword('902f3d6cdc86597...')
+#11 C:\xampp\apps\b4t\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\frontend\MembersController))
+#12 C:\xampp\apps\b4t\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\apps\b4t\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
